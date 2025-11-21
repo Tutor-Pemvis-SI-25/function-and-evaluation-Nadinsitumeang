@@ -38,7 +38,7 @@ public class TLAST {
         output(deskripsitugas, kodematkul, matkul, dosen, deadline, nimnama, status, prioritas, teks, n);
     }
     
-    public static void addtask(String[] deskripsitugas, String[] kodematkul, String[] matkul, String[] dosen, String[] deadline, String[] nimnama, double[] tingkatkesulitan, int[] harihinggadeadline, String[] status, double[] prioritas, String[] teks, int i, int n) {
+    public static int addtask(String[] deskripsitugas, String[] kodematkul, String[] matkul, String[] dosen, String[] deadline, String[] nimnama, double[] tingkatkesulitan, int[] harihinggadeadline, String[] status, double[] prioritas, String[] teks, int i, int n) {
         deskripsitugas[i] = input.nextLine();
         kodematkul[i] = input.nextLine();
         matkul[i] = input.nextLine();
@@ -63,6 +63,8 @@ public class TLAST {
             }
         }
         n = n + 1;
+        
+        return n;
     }
     
     public static void descending(String[] deskripsitugas, String[] kodematkul, String[] matkul, String[] dosen, String[] deadline, String[] nimnama, double[] tingkatkesulitan, int[] harihinggadeadline, String[] status, double[] prioritas, String[] teks, int i, int n) {
@@ -163,10 +165,3 @@ public class TLAST {
         return String.format("%." + digits + "f", value);
     }
 }
-            System.out.println("Memori Penuh");
-        }
-        
-        return n;
-    }
-}
-
